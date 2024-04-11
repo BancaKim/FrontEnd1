@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="Javascript">
+        function findSubject(){
+            var arrRadio = document.getElementsByName("cs");
+
+            for(var i=0;i<arrRadio.length;i++){
+                if(arrRadio[i].checked){
+                    alert(arrRadio[i].value+"과목을 좋아하시는군요!")
+                    break;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>제일 좋아하는 과목은?</h2>
+    <input type="radio" name="cs" value="HTML">HTML<br>
+    <input type="radio" name="cs" value="CSS">CSS<br>
+    <input type="radio" name="cs" value="js">JavaScript<br>
+    <input type="button" name="submit" value="답안지 제출" onclick="findSubject()">
+</body>
+</html>

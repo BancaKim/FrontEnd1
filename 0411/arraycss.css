@@ -1,0 +1,7 @@
+.sb {
+    width:20px;
+    height:20px;
+    padding:10px 30px;
+    box-sizing: border-box;
+    display:block;
+}

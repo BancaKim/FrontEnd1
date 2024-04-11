@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
+</head>
+<body>
+    <div class="calculator-container">
+    <h2>사칙연산 계산기</h2><br>
+
+    <input type="text" id="num1"> 
+    <select name= "items2" id="op">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="text" id="num2">
+    <input type="button" id="execute" value="=" onclick="calculate()">
+    <input type="text" id="result" disabled>
+    <input type="button" id="reset" value="초기화" onclick="resetCalculator()">
+</div>
+</body>
+</html>

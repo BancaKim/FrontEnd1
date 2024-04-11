@@ -1,0 +1,49 @@
+body {
+    background-image:url("calculator_background.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#calculator {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+input[type="text"],
+select,
+input[type="button"],
+input[type="reset"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+}
+input[type="text"]#result {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+input[type="button"] {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="button"]:hover,
+input[type="reset"]:hover {
+    opacity: 0.8;
+}
+.calculator-container {
+    background-color: white;
+    text-align: center; /* 컨테이너 내의 텍스트 가운데 정렬 */
+    width: auto; /* 필요한 만큼 너비를 자동으로 설정 */
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* 컨테이너에 그림자 추가 */
+    border-radius: 10px; /* 컨테이너 모서리 둥글게 */
+}

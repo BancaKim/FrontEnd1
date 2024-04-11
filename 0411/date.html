@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./datecss.css">
+    <script language="javascript">
+        function showClock(){
+        let currentDate = new Date();
+        let divClock= document.getElementById("divClock");
+        let getHour = currentDate.getHours();
+        function isMorning(getHour){
+            if (getHour<=12){
+                return "오전 ";
+            } else {
+                return "오후 ";
+            }
+        }
+        let msg =isMorning()+"현재 시간: "+getHour+"시 ";
+        msg += currentDate.getMinutes()+"분 ";
+        msg += currentDate.getSeconds()+"초";
+        
+        divClock.textContent = msg;
+        setTimeout(showClock, 1000);
+        }
+
+    </script>
+</head>
+<body onload="showClock()">
+    <div id="divClock">
+    </div>
+</body>
+</html>

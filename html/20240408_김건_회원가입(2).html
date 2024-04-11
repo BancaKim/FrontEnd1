@@ -1,45 +1,46 @@
  <html>
 	<head>
 		<title>회원가입 페이지</title>
+		<link rel ="stylesheet" href="style.css">
+		<style src="script.js"></style>
 	</head>
-<body background = "cute.jpg">
-<audio autoplay controls>
-	<source src = "perfect-beauty.mp3" type="audio/mp3">
-</audio>
-<form action="mailto:weberian92@gmail.com" method="POST">
-		<table align="center" width="650" height="250" border="1">
+<body>
+
+
+	<form action="mailto:weberian92@gmail.com" method="POST">
+		<table>
 			<tr><!--첫번째 줄 시작-->
-				<td colspan="2" align="center" bgcolor="990066" style="color : white;">회원 기본정보</td>
+				<td class="title" colspan="2">회원 기본정보</td>
 			</tr> <!--첫번째 줄 끝-->
 			<tr><!--두번째 줄 시작-->
-				<td bgcolor="CCCCCC"><B>아이디:</B></td>
+				<td class="subtitle"><B>아이디:</B></td>
 				<td><input type="text" name="id" minlength="4" maxlength="12">4~12자리의 영문 대소문자와 숫자로만 입력</td> 
 			</tr> <!--두번째 줄 끝-->
 			<tr><!--3번째 줄 시작-->
-				<td bgcolor="CCCCCC"><B>비밀번호:</B></td>
+				<td class="subtitle"><B>비밀번호:</B></td>
 				<td><input type="password" name="my_pwd" minlength="4" maxlength="12">4~12자리의 영문 대소문자와 숫자로만 입력</td> 
 			</tr> <!--3번째 줄 끝-->
 			<tr><!--4번째 줄 시작-->
-				<td bgcolor="CCCCCC"><B>비밀번호확인:</B></td>
+				<td class="subtitle"><B>비밀번호확인:</B></td>
 				<td><input type="password" name="my_pwd_chk" minlength="4" maxlength="12"></td> 
 			</tr> <!--4번째 줄 끝-->
 			<tr><!--5번째 줄 시작-->
-				<td bgcolor="CCCCCC"><B>메일주소:</B></td>
+				<td class="subtitle"><B>메일주소:</B></td>
 				<td><input type="text" name="my_mailaddr"></td>
 			</tr> <!--5번째 줄 끝-->
 			<tr><!--6번째 줄 시작-->
-				<td bgcolor="CCCCCC"><B>이름:</B></td>
+				<td class="subtitle"><B>이름:</B></td>
 				<td><input type="text" name="my_name"></td> 
 			</tr> <!--6번째 줄 끝-->
 			<tr><!--7번째 줄 시작-->
-				<td colspan="2" align="center" bgcolor="990066" style="color : white;">개인신상정보</td>
+				<td class="title" colspan="2">개인신상정보</td>
 			</tr> <!--7번째 줄 끝-->
 			<tr><!--8번째 줄 시작-->
-				<td bgcolor="CCCCCC"><B>주민등록번호:</B></td>
+				<td class="subtitle"><B>주민등록번호:</B></td>
 				<td><input type="text" name="ssn">예)1234561234567 </td> 
 			</tr> <!--8번째 줄 끝-->
 			<tr><!--9번째 줄 시작-->
-				<td bgcolor="CCCCCC"><B>생일:</B></td>
+				<td class="subtitle"><B>생일:</B></td>
 				<td><input type="text" size="8" name="year">년 
 					<select name= "items1">
 						<option value="1월">1</option>
@@ -90,7 +91,7 @@
 					</select>일</td> 
 			</tr> <!--9번째 줄 끝-->
 			<tr><!--10번째 줄 시작-->
-				<td bgcolor="CCCCCC"><B>관심분야:</B></td>
+				<td class="subtitle"><B>관심분야:</B></td>
 				<td>
 					<input type="checkbox" name="fav_hob" value ="컴퓨터">컴퓨터 
 					<input type="checkbox" name="fav_hob" value ="인터넷">인터넷
@@ -100,13 +101,17 @@
 				</td> 
 			</tr> <!--10번째 줄 끝-->
 			<tr><!--11번째 줄 시작-->
-				<td bgcolor="CCCCCC"><B>자기소개:</B></td>
+				<td class="subtitle"><B>자기소개:</B></td>
 				<td>	<textarea name="my_introduce" cols="60"  rows="5"></textarea></td> 
 			</tr> <!--11번째 줄 끝-->
 		</table>
-			<center>		
-				<a href= "mailto:weberian92@gmail.com?subject=안녕하세요"><input type="submit" value = "회원가입"></a>
-				<input type='reset' value="다시입력"></center>
+			<div class="button">	
+				<input type="submit" class="subbutton" value = "회원가입"></a>
+				<input type='reset' class="subbutton" value="다시입력">
+			</div>
 		</form>
+		<audio autoplay controls>
+			<source src = "perfect-beauty.mp3" type="audio/mp3">
+		</audio>
 	</body>
 </html>

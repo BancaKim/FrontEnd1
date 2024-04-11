@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <script language="javascript">
+
+        var number = 0;
+        
+        while(number<6){
+        var result = setInterval(sayHello, 3000);
+        clearInterval(result);
+        number++;
+        };
+
+        function sayHello(){
+            alert("안녕하세요 setTimeout메서드가 실행해준 함수입니다.");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
