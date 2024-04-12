@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="./main.css"> -->
+    <script defer src="./main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="inputword">
+            <input type="text"  id="inputtext">
+            <input type="button" value="미리 보기" onclick="changeWord()">
+        </div>
+        <div class="txcolor">
+            <span>색상:</span>
+            <select name="coloritems">
+                <option value="blue">파랑</option>
+                <option value="red">빨강</option>
+                <option value="green">초록</option>
+                <option value="purple">보라</option>
+                <option value="pink">핑크</option>
+                <option value="bage">베이지</option>
+            </select>
+        </div>
+        <div class="txsize">
+            <span>크기:</span>
+            <select name="sizeitems">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </div>
+        <div class="txoption" name="txoption">
+            <div class="option1">
+                <input type="checkbox" name="fontoption" id="cancelline">취소선
+                <input type="checkbox" name="fontoption" id="bigger">크게
+                <input type="checkbox" name="fontoption" id="smaller">작게
+                <input type="checkbox" name="fontoption" id="thinker">두껍게
+                <input type="checkbox" name="fontoption" id="itallicer">기울임
+            </div>
+            <div class="option2">
+                <input type="checkbox" name="fontoption" id="upper">위첨자
+                <input type="checkbox" name="fontoption" id="lower">아래첨자
+                <input type="checkbox" name="fontoption" id="lowerword">소문자로
+                <input type="checkbox" name="fontoption" id="upperword">대문자로
+            </div>
+        </div>
+        <div class="txresult" id="txresult">
+        </div>
+    </div>
+</body>
+
+</html>
