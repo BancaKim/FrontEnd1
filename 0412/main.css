@@ -1,14 +1,8 @@
 body{
     background-color: #B39CD0;
-    /* display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    align-content: center; */
-    font-size: 20px;
+    font-size: 40px;
     font-family: "Nanum Gothic", sans-serif;
     font-weight: 500;
-    position:relative;
 }
 
 .container{
@@ -16,32 +10,22 @@ body{
     width: 800px;
     height: 800px;
     border: 1px solid; 
-    border-radius: 1%;
-    position : absolute;
-    top : 0;
-    bottom : 0;
-    left:0;
-    right:0;
-    margin : auto;
+    position : relative;
+    margin : 0 auto;
 }
 
-.inputword{
-    /* background-color: blueviolet; */
-
+div.txcolor{
+    margin:10px 0;
 }
 
-.txcolor{
-    /* background-color: beige; */
+div.txsize{
+    margin:10px 0;
 }
 
-.txsize{
-    /* background-color: brown; */
+div.option1{
+    margin:10px 0;
 }
 
-.txoption{
-    /* background-color: blue; */
-}
-
-.material-symbols-outlined {
-    font-size:1000px;
+div.option2{
+margin:10px 0 100px;
 }
