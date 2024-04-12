@@ -377,6 +377,8 @@ header .badges .badge {
     height: 100%;
     background-color: #333;
     display: flex;
+    align-items: center;
+
 }
 
 .notice .notice-line .inner__left h2 {
@@ -396,6 +398,8 @@ header .badges .badge {
     width:62px;
     height: 62px;
     display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .notice .notice-line .inner__left .notice-line__more .material-symbols-outlined {
@@ -406,10 +410,23 @@ header .badges .badge {
 .notice .notice-line .inner__right {
     width: 40%;
     height: 100%;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.notice .notice-line .inner__right h2 {}
+.notice .notice-line .inner__right h2 {
+    font-size:17px;
+    font-weight: 700;
+}
 
-.notice .notice-line .inner__right .swiper-container {}
+.notice .notice-line .inner__right .toggle-promotion {
+    width: 62px;
+    height: 62px;
+    cursor: pointer;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
 
-.notice .notice-line .inner__right .notice-line__more {}
+.notice .notice-line .inner__right .toggle-promotion .material-symbols-outlined {}
